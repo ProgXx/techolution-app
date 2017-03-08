@@ -1,0 +1,9 @@
+<div *ngIf="car" class="car-detail">
+  <h2>{{car.make}}&nbsp;&nbsp;{{car.model}}</h2>
+  <div>{{car.description}}</div>
+  <img [src]="car.image"/>
+</div>
+
+<div *ngIf="!car" class="placeholder">
+  <span>*Select values from dropdown</span>
+</div>

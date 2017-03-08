@@ -1,3 +1,18 @@
-<h1>
-  {{title}}
-</h1>
+<h1 class="title">{{title}}</h1>
+<div class="form">
+<app-maker class="dropdown"
+  [makers]="makers"
+  (makerSelected)="onMakersSelected($event)"></app-maker>
+
+  <app-models class="dropdown"
+    [models]="selectedModels"
+    (modelSelected)="onModelSelected($event)"
+  ></app-models>
+</div>
+
+<app-car-detail class="content" *ngIf="!error"
+  [car]="selectedCar"></app-car-detail>
+
+<div *ngIf="error" class="error">
+  Oops!! Something went wrong
+</div>

@@ -1,0 +1,35 @@
+$font-family-sans-serif:  "News Cycle", "Arial Narrow Bold", sans-serif !default;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+$headings-font-weight: 700;
+
+.title {
+  font-size: 18px;
+  font-family: $font-family-sans-serif;
+  font-weight: $headings-font-weight;
+  border-bottom: 1px solid #e1e1e1;
+  padding: 10px 0 10px 0;
+}
+.form {
+  .dropdown {
+    padding: 10px 0 10px 0;
+    display: inline-block;
+    width: 45%;
+  }
+  width: 100%;
+  border-bottom: 1px solid #e1e1e1;
+  font-family: $font-family-serif;
+  font-size: 15px;
+}
+
+.content,.error {
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  font-family: $font-family-serif;
+}
+
+.error {
+  font-color: red;
+  text-align: center;
+  margin-top: 15px;
+}

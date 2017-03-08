@@ -1,1 +1,48 @@
-/* You can add global styles to this file, and also import other style files */
+/** Global CSS **/
+$web-font-path: "https://fonts.googleapis.com/css?family=News+Cycle:400,700" !default;
+@import url($web-font-path);
+
+$gray        : #777;
+$body-bg     : #fff;
+$text-color  : $gray;
+
+
+$font-family-sans-serif:  "News Cycle", "Arial Narrow Bold", sans-serif !default;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+
+$font-family-base:        $font-family-serif !default;
+
+$headings-font-weight: 700;
+
+*{
+  padding:0;
+  margin:0;
+}
+
+.text-center {
+  text-align: center;;
+}
+
+.container {
+  padding: 0 5% 0 5%;
+  display: block;
+}
+
+select {
+    font-size: 10px;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 10px;
+    color: black;
+    padding: 12px;
+    -webkit-appearance: none;
+    width: 90%;
+    background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50px' height='50px'><polyline points='46.139,15.518 25.166,36.49 4.193,15.519'/></svg>") right no-repeat;
+
+    background-color: #fff;
+    background-transparency: 0.5;
+    background-position: right 15px top 10px;
+    background-size: 18px 18px;
+}
+select:active {
+    border: 1px solid #000;
+}

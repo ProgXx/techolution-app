@@ -1,0 +1,9 @@
+<div *ngIf="makers">
+  <select (change)="onSelect($event)">
+    <option value="">- Please Choose a maker -</option>
+    <option *ngFor="let maker of makers"
+            value="{{maker}}">
+            {{maker}}
+    </option>
+  </select>
+</div>

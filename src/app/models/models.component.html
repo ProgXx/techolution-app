@@ -1,0 +1,9 @@
+<div *ngIf="models">
+  <select (change)="onSelect($event)">
+    <option value="">- Please Choose a model -</option>
+    <option *ngFor="let model of models"
+            value="{{model}}">
+            {{model}}
+    </option>
+  </select>
+</div>
