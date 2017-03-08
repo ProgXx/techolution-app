@@ -34,10 +34,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   }));
 
-  it(`should have as title 'Cars'`, async(() => {
+  it(`should have as title 'Automobiles'`, async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('Cars');
+    expect(app.title).toEqual('Automobiles');
   }));
 
   it(`should have no default models selected`, async(() => {
